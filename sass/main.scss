@@ -1,6 +1,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   padding: 0 16px;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
 }
 
 .nav {
@@ -14,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+
     span {
       border: 1px solid black;
       border-radius: 50px;
@@ -21,6 +25,7 @@ body {
       font-size: 10px;
       font-weight: bold;
     }
+
     h1 {
       margin: 0;
     }
@@ -39,6 +44,7 @@ body {
         cursor: pointer;
       }
     }
+
     img {
       height: 20px;
       width: 20px;
@@ -64,20 +70,24 @@ body {
       margin: 3px;
       border-radius: 10px;
     }
+
     .animateBar1 {
       animation: flipBar1 0.6s;
       animation-fill-mode: forwards;
     }
+
     .animateBar2 {
       animation: fadeBar2 0.6s;
       animation-fill-mode: forwards;
     }
+
     .animateBar3 {
       animation: flipBar3 0.6s;
       animation-fill-mode: forwards;
     }
   }
 }
+
 .mobileNav {
   position: fixed;
   z-index: 2;
@@ -102,6 +112,7 @@ body {
       cursor: pointer;
     }
   }
+
   img {
     height: 20px;
     width: 20px;
@@ -136,27 +147,35 @@ body {
 #eth {
   grid-area: eth;
 }
+
 #alphabet {
   grid-area: alphabet;
 }
+
 #traveler {
   grid-area: traveler;
 }
+
 #cube {
   grid-area: cube;
 }
+
 #astro {
   grid-area: astro;
 }
+
 #cup {
   grid-area: cup;
 }
+
 #insta {
   grid-area: insta;
 }
+
 #foam {
   grid-area: foam;
 }
+
 #dimensional {
   grid-area: dimensional;
 }
@@ -196,6 +215,7 @@ body {
       opacity: 1;
     }
   }
+
   .white {
     color: #fff;
   }
@@ -214,6 +234,7 @@ body {
     max-width: 100%;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .project-grid {
     grid-template-areas:
@@ -268,15 +289,18 @@ body {
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(45deg) translate(2.3px, 10px);
   }
 }
+
 @keyframes fadeBar2 {
   from {
     transform: scaleX(1);
     opacity: 1;
   }
+
   to {
     transform: scaleX(0);
     opacity: 0;
@@ -287,6 +311,7 @@ body {
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(-45deg) translate(2.3px, -10px);
   }
